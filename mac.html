@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbook pro</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="container">
+        <div class="d-flex m-4">
+            <div class="m-4 col-lg-6 my-2">
+                <img src="mac.png" alt="" class="img-fluid mt-4">
+                <h1 class="text-center mt-4">MacBook Pro</h1>
+            </div>
+            <div class="m-4 col-lg-6 mt">
+                <h1>Customize your Blue 24-inch iMac with Apple M1 chip. </h1>
+                <p>Apple M1 chip with 8‑core CPU, 8‑core GPU, and 16‑core Neural Engine
+                    8GB unified memory
+                    256GB SSD storage
+                    24-inch Retina display with True Tone
+                    Backlit Magic Keyboard - US English.</p><br>
+                <h2 class="mt-4">Memory</h2>
+                <button id="extraMemory8" type="button" class="btn btn-outline-secondary">8GB unified memory</button>
+                <button id="extraMemory16" type="button" class="btn btn-outline-secondary">16Gb unified memory</button>
+
+                <h2 class="mt-4">storage</h2>
+                <button id="ssdStorage256" type="button" class="btn btn-outline-secondary">256GB SSD Storage</button>
+                <button id="ssdStorage512" type="button" class="btn btn-outline-secondary">512GB SSD Storage</button>
+                <button id="ssdStorage1024" type="button" class="btn btn-outline-secondary">1TB SSD Storage</button>
+
+                <h2 class="mt-4">Choose your delivery option</h2>
+                <button id="freeDelivery" type="button" class="btn btn-outline-secondary">Friday,Aug25 free prime
+                    delivery</button>
+                <button id="expressDelivery" type="button" class="btn btn-outline-secondary">Friday,Aug21 delivery
+                    charge
+                    $20</button>
+
+                <table class="table my-4">
+
+                    <tbody>
+                        <tr>
+                            <td class="fs-5">Best price</td>
+                            <td class="fs-5"><span id="bestPrice">$1299</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fs-5">Extra memory cost</td>
+                            <td class="fs-5"><span id="extraMemoryCost">$0</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fs-5">Extra storage cost </td>
+                            <td class="fs-5"><span id="extraStorageCost">$0</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fs-5">Delivery charge</td>
+                            <td class="fs-5"><span id="deliveryCharge">$0</span></td>
+                        </tr>
+                        <tr>
+                            <td class="fs-4">total price</td>
+                            <td class="fs-4"><span id="totalPrice">$1299</span></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <h4 class="my-4">Add promo code</h4>
+                <input id="inputPromo" class="p-1" type="text">
+                <button id="apply" type="button" class="btn btn-danger">Apply</button>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h1 id="grandTotal" class="my-4 text-center"><span id="grandTotal">Total: $1299</span></h1>
+        </div>
+    </section>
+
+    <script src="mac.js"></script>
+</body>
+
+</html>
