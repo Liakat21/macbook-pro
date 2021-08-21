@@ -15,12 +15,11 @@ function calculation(){
     const extraMemoryCost = getCosting('extraMemoryCost');
     const extraStorageCost = getCosting('extraStorageCost');
     const deliveryCharge = getCosting('deliveryCharge');
-    const totalSubPrice = (bestPrice.innerText + extraMemoryCost.innerText + extraStorageCost.innerText + deliveryCharge.innerText);
+    const totalSubPrice = (bestPrice + extraMemoryCost + extraStorageCost + deliveryCharge); 
     
 
-    document.getElementById('totalPrice').innerText = totalSubPrice;
-    document.getElementById('grandTotal').innerText = totalSubPrice;      
-}
+};
+const totalPrice = document.getElementById("totalPrice")
 //Pomo Code Error alert.
 
 function wrongPromo(){
